@@ -86,7 +86,7 @@ class PhysicsInformedNN:
                                                                            'maxfun': 50000,
                                                                            'maxcor': 50,
                                                                            'maxls': 50,
-                                                                           'ftol' : 1e-6})
+                                                                           'ftol' : 1e-7})
         
         init = tf.global_variables_initializer()
         self.sess.run(init)
@@ -353,7 +353,7 @@ if __name__ == "__main__":
     ax.set_title('$t = 0.75$', fontsize = 10)
 
     # Shows the plot in a figure
-    # plt.show()
+    plt.show()
 
     # Save the figure to a file
-    savefig('./figure_pilm_burgers')  
+    # savefig('./figure_pilm_burgers')  
